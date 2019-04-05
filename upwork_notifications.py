@@ -53,7 +53,7 @@ def find_user_id_based_on_email(sc,email="talhaanwar.anwar@gmail.com"):
         return user_found
     
 def send_message_to_user(msg):
-    token = "xoxb-368337695024-599092697542-H9xXwC8Vwqp3uFDrljeSUrZ8"
+    token = "your-slack-token-here"
     sc = SlackClient(token) 
     user_id = find_user_id_based_on_email(sc)
     print("Got user id:"+user_id)
